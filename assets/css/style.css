@@ -70,6 +70,7 @@ nav {
     padding: 0 1rem;
     display: none;
     top: 100%;
+    overflow: hidden;
 }
 
 /* Nav toggle */
@@ -84,6 +85,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 
 
 /* Main content */
@@ -109,9 +111,13 @@ main {
     
 }
 
-.card{
-    width: 230px;
-    padding: 5px;
+.card-movie{
+    width: 300px; 
+}
+
+
+.img{
+    width: 200px;
 }
 
 /* Footer */
