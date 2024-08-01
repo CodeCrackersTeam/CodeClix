@@ -1,6 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -10,6 +11,7 @@
 
 /* General styles */
 body {
+    text-decoration:none;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,20 +33,19 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: green;
+    background-color: black;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-header a {
+header a > h1 {
     text-decoration: none;
-    color: inherit;
+
 }
 
 #menu {
@@ -64,13 +65,12 @@ header a {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: green;
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
+    overflow: hidden;
 }
 
 /* Nav toggle */
@@ -87,10 +87,9 @@ nav {
 }
 
 
+
 /* Main content */
 main {
-    background-color: grey;
- 
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
@@ -101,19 +100,27 @@ main {
 }
 
 /* Trailer section */
+.boxShadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 #trailer {
-    background-color: grey;
     height: 500px;
     width: 100%;
     position: relative;
+    margin-top: 10px;
+    
 }
 
+.card-movie{
+    width: 300px; 
+}
+
+
+.img{
+    width: 200px;
+}
 
 /* Footer */
-
-#footer{
-    background-color: darkcyan;
-}
 
 
 /* Media query: large or landscape phones (576px and up) */
@@ -156,13 +163,10 @@ main {
         margin-top: 79px;
     }
 
+
+
 }
 
-/* Footer */
-
-#footer{
-    background-color: darkcyan;
-}
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -179,6 +183,14 @@ main {
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
+
+    .container{
+        
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        
+    }
 
 }
 
